@@ -160,6 +160,7 @@ p{
     justify-content: space-between;
     align-items: center;
     width: 150px;
+    float: right;
 }
 .login i{
     padding: 10px;
@@ -215,4 +216,40 @@ footer{
     background: rgb(48 49 50);
     height: 250px;
     margin-top: 20px;
+}
+
+/* style connexion */
+.connexion{
+    padding: 15px 20px;
+    background: #fff;
+    float: right;
+    position: absolute;
+    margin-top: 45px;
+    right: 3%;
+    float: right;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 1s ease;
+}
+.connexion a{
+    text-decoration: none;
+    color: #16a7b4;
+}
+
+.connexion p{
+    margin-top: 10px;
+}
+.connexion .seConnecter{
+    text-align: center;
+    background-color: #555;
+    padding: 7px;
+    display: block;
+    color: #fff;
+}
+
+.afficheConnexion{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
 }
