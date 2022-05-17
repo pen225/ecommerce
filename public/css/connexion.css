@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Montserrat:wght@200&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,300;1,400;1,500;1,600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header-section{
+    background: linear-gradient(#fff, #eaf2fB);
+    height: 100vh;
+    overflow: auto;
+}
+
+.container{
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0px 20px;
+}
+.navbar{
+    padding: 20px;
+}
+.stiky-nav{
+    margin-top: -20px;
+    position: sticky;
+    top: 0px;
+}
+.logo img{
+    height: 70px;
+    border-radius: 3px;
+}
+.inscriptionForm{
+    width: 50%;
+    margin: 0px auto;
+}
+.seConnecter{
+    cursor: pointer;
+}
+.seConnecter a{
+    text-align: center;
+    text-decoration: none;
+    color: #555;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+    width: 100%;
+    padding: 6px;
+    border: 2px solid #555;
+    display: inline-block;
+    border-radius: 3px;
+}
+.seConnecter a:hover{
+    color: #fff;
+    background: #555;
+}
+
+/* form Connexion */
+form div{
+    margin-top: 10px;
+    position: relative;
+}
+form div input{
+    width: 100%;
+    padding: 8px;
+    font-size: 1.2rem;
+    outline: none;
+    border: 1px solid rgba(153, 153, 153, 0.623);
+}
+form input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background: #333;
+    color: #fff;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background 0.3s;
+}
+form input[type="submit"]:hover{
+    background: #555;
+}
+.boxRadio div{
+    display: flex;
+    align-items: center;
+}
+.boxRadio input{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    color: #555;
+}
+
+/* ------ */
+
+.inscription{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.affichForm{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .5s;
+}
+.cacheForme{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s;
+    position: absolute;
+    transform: translateY(50px);
+}

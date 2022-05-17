@@ -15,6 +15,10 @@ const userController = class {
     static femme = (req = request, res = response) => {
         res.render('femme')
     }
+    // Afficher la page de Connexion
+    static connexion = (req = request, res = response) => {
+        res.render('connexion')
+    }
 }
 
 module.exports = userController;

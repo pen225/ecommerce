@@ -54,17 +54,6 @@ nav ul li a:hover{
 nav ul li a.femme{
     color: #16a7b4;
 }
-/* .login{
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    height: 50px;
-    width: 50px;
-    background: #555;
-    border-radius: 50%;
-} */
 
 .row{
     display: flex;
@@ -103,6 +92,7 @@ p{
 }
 .header-section{
     background: linear-gradient(#fff, #eaf2fB);
+    height: 100vh;
 }
 /* Style categorie */
 .info-categorie{
@@ -118,6 +108,7 @@ p{
 }
 
 .content-search{
+    position: relative;
     display: flex;
     align-items: center;
     padding: 20px;
@@ -225,7 +216,7 @@ footer{
     float: right;
     position: absolute;
     margin-top: 45px;
-    right: 3%;
+    right: 1%;
     float: right;
     opacity: 0;
     visibility: hidden;

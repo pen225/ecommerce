@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page d'accueil</title>
+    <link rel="stylesheet" href="../public/css/connexion.css">
+    <script src="https://kit.fontawesome.com/a6db07c55e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Section header -->
+    
+    <div class="header-section">
+        <div class="stiky-nav">
+            <div class="container">
+                <header class="navbar">
+                    <div class="logo">
+                        <a href="/"><img src="../public/images/shopping-cart-ga97fd2286_1280.png" alt=" shopping cart"></a>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="inscriptionForm">
+                <h2>Bonjour</h2>
+                <div class="seConnecter connecter" >
+                    <a href="">Se connecter</a>
+                </div>
+                <form action="" class="connexion">
+                    <div>
+                        <label for="email">Adresse e-mail</label>
+                        <!-- <span><i class="far fa-envelope"></i></span> -->
+                        <input type="email" name="email" id="email" placeholder="Adresse e-mail">
+                    </div>
+                    <div>
+                        <label for="password">Mot de passe</label>
+                        <!-- <span><i class="fas fa-lock"></i></span> -->
+                        <input type="password" name="email" id="password" placeholder="Mot de passe">
+                    </div>
+                    <input type="submit" value="Se connecter">
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="inscriptionForm">
+                <h2>Je suis nouveau ici</h2>
+                <div class="seConnecter" id="inscrire">
+                    <a href="">S'inscrire</a>
+                </div>
+                <form action="" class="inscription">
+                    <div>
+                        <label for="nom">Nom</label>
+                        <input type="text" name="nom" id="nom" placeholder="Nom">
+                    </div>
+                    <div>
+                        <label for="prenom">Prénom</label>
+                        <input type="prenom" name="text" id="prenom" placeholder="Prénom">
+                    </div>
+                    <div>
+                        <label for="email">Adresse e-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Adresse e-mail">
+                    </div>
+                    <div>
+                        <label for="password">Mot de passe</label>
+                        <input type="password" name="email" id="password" placeholder="Mot de passe">
+                    </div>
+                    <div>
+                        <label for="repeatPassword">Répetez votre mot de passe</label>
+                        <input type="password" name="repeatPassword" id="repeatPassword" placeholder="Répetez votre mot de passe">
+                    </div>
+                    <div>
+                        <p>Qu'est-ce qui vous intéresse le plus ?</p>
+                    </div>
+                    <div class="boxRadio">
+                        <div>
+                            <input type="radio" name="mode" value="femme"><label for="">Mode Femme</label><br><br>
+                        </div>
+                        <div>
+                            <input type="radio" name="mode" value="femme"><label for="">Mode Homme</label><br><br>
+                        </div>
+                        <div>
+                            <input type="radio" name="mode" value="femme"><label for="">Aucune préférence</label><br><br>
+                        </div>
+                    </div>
+                    <input type="submit" value="Se connecter">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../public/js/scriptConnexion.js"></script>
+</body>
+</html>

@@ -15,3 +15,4 @@ boxConnexion.addEventListener('mouseover', () => {
 boxConnexion.addEventListener('mouseout', () => {
     boxConnexion.classList.remove('afficheConnexion');
 })
+
