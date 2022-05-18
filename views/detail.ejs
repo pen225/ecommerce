@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page d'accueil</title>
+    <link rel="stylesheet" href="../public/css/detail.css">
+    <script src="https://kit.fontawesome.com/a6db07c55e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Section header -->
+    
+    <div class="header-section">
+        <div class="stiky-nav">
+            <div class="container">
+                <%- include('nav') %>
+                
+                <header class="navbar">
+                    <div class="logo">
+                        <a href="/"><img src="../public/images/shopping-cart-ga97fd2286_1280.png" alt=" shopping cart"></a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="/" class="index">Accueil</a></li>
+                            <li><a href="/homme">Homme</a></li>
+                            <li><a href="/femme">Femme</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="content-detail">
+                <div class="row">
+                    <div class="col-img">
+                        <img src="../public/images/banner-image.webp" alt="">
+                    </div>
+                    <div class="col-infos">
+                        <div>
+                            <h2 class="article-name"> Aire-max</h2>
+                            <p class="marques">Marque: <span class="marque">Nike</span></p>
+                            <p class="references">Ref: <span class="reference">0009</span></p>
+                        </div>
+                        <div class="descriptions">
+                            <p>Description</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae maiores suscipit esse, voluptate tenetur, culpa laboriosam veniam similique commodi sunt consequatur. Neque unde fugit, eum amet ipsam laborum aut nobis.</p>
+                        </div>
+                        <div class="box-prix">
+                            <div>
+                                <p>quantite</p>
+                                <input type="number">
+                            </div>
+                            <div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+
+
+    <script src="../public/js/script.js"></script>
+</body>
+</html>

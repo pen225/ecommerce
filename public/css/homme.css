@@ -104,6 +104,7 @@ p{
 .header-section{
     background: linear-gradient(#fff, #eaf2fB);
     height: 100vh;
+    /* overflow: auto; */
 }
 /* Style categorie */
 .info-categorie{
