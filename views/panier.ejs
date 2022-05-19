@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+    <link rel="stylesheet" href="../public/css/panier.css">
+    <script src="https://kit.fontawesome.com/a6db07c55e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Section header -->
+    
+    <div class="header-section">
+        <div class="stiky-nav">
+            <div class="container">
+                <%- include('nav') %>
+                
+                <header class="navbar">
+                    <div class="logo">
+                        <a href="/"><img src="../public/images/shopping-cart-ga97fd2286_1280.png" alt=" shopping cart"></a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="/" class="index">Accueil</a></li>
+                            <li><a href="/homme">Homme</a></li>
+                            <li><a href="/femme">Femme</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="contact-soucis">
+                <p class="soucis">Un soucis ?</p>
+                <p class="appel-commande">Vous pouvez commander en appelant ses numéros</p>
+                <p class="tel-commande">(+ 225) 0778684509 / 02220299</p>
+            </div>
+            <h2>Mon panier</h2>
+            <div class="content-panier">
+                <div class="row">
+                    <div class="box-panier box-pan">
+                        
+                        <div class="info-article">
+                            <div class="img-article"><img src="../public/images/Images site ecommerce/product-8.jpg" alt=""></div>
+                            <p class="name-article">Fossil</p>
+                        </div>
+                        <div class="calcul-price">
+                            <div>
+                                <input type="button" value="-">
+                                <input type="text" value="1" disabled>
+                                <input type="button" value="+">
+                            </div>
+                            <div><span>11000</span> CFA</div>
+                            <div><i class="far fa-trash-alt"></i></div>
+                        </div>
+                    </div>
+                    <div class="box-commande box-pan">
+                        <div class="box-taxe">
+                            <div>
+                                <p><span>1 </span>Articles</p>
+                                <p><span>11000 </span>CFA</p>
+                            </div>
+                            <div>
+                                <p>Livraison <span> </span>CFA</p>
+                                <p><span>1500 </span>CFA</p>
+                            </div>
+                        </div>
+                        <div class="box-taxe">
+                            <div>
+                                <p><span>Total (HT) </span></p>
+                                <p><span>12500 </span>CFA</p>
+                            </div>
+                            <div>
+                                <p><span>Taxes</span></p>
+                                <p><span>0 </span>CFA</p>
+                            </div>
+                        </div>
+                        <div class="commande">
+                            <a href="">Commander</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+
+
+    <script src="../public/js/script.js"></script>
+</body>
+</html>

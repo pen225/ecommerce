@@ -23,6 +23,10 @@ const userController = class {
     static detail = (req = request, res = response) => {
         res.render('detail')
     }
+    // Afficher le panier
+    static panier = (req = request, res = response) => {
+        res.render('panier')
+    }
 }
 
 module.exports = userController;
