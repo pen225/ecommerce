@@ -86,7 +86,6 @@ nav ul li a.index{
     border-radius: 3px;
 }
 .col-infos{
-    background: rgba(255, 0, 0, 0.314);
     max-width: 50%;
     min-width: 250px;
 }
@@ -94,14 +93,46 @@ nav ul li a.index{
     /* margin-left: 20px; */
 }
 
-
-
-
-
-
-
-
-
+.box-prix{
+    border: 1px dashed #16a7b4;
+    padding: 5px;
+    margin: 5px 0;
+    padding: 10px;
+}
+.description-title, .marque-title, .ref-title{
+    font-weight: bold;
+    text-decoration: underline;
+}
+input[type="number"]{
+    height: 1.9rem;
+    width: 100px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(85, 85, 85, 0.291);
+}
+.price-para{
+    font-weight: bold;
+    font-size: 2rem;
+    color: #16a7b4;
+}
+.ajout-panier, .achat-rapide{
+    display: block;
+    text-decoration: none;
+    background: #16a7b4;
+    color: #fff;
+    padding: 7px;
+    text-align: center;
+    margin-top: 10px;
+}
+.qte{
+    font-weight: bold;
+}
+.article-name{
+    color: #555;
+    color: #16a7b4;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
 
 
 
@@ -162,9 +193,9 @@ nav ul li a.index{
 }
 .login i{
     padding: 10px;
-    background: #555;
+    background: #16a7b4;
     border-radius: 50%;
-    color: #999;
+    color: #fff;
     font-size: 1.5rem;
 }
 .login a{
@@ -180,8 +211,7 @@ nav ul li a.index{
 
 /* Footer */
 footer{
-    background-color: rgb(48 49 50);
-    background: rgb(48 49 50);
+    background: #a2ecf3;
     height: 250px;
     margin-top: 20px;
 }
@@ -209,7 +239,7 @@ footer{
 }
 .connexion .seConnecter{
     text-align: center;
-    background-color: #555;
+    background-color: #16a7b4;
     padding: 7px;
     display: block;
     color: #fff;
