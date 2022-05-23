@@ -20,7 +20,7 @@ body{
 .header-section{
     background: linear-gradient(#fff, #eaf2fB);
     height: 100vh;
-    /* overflow: auto; */
+    overflow: auto;
 }
 .navbar{
     display: flex;
@@ -89,9 +89,9 @@ nav ul li a.index{
     max-width: 50%;
     min-width: 250px;
 }
-.col-infos div{
-    /* margin-left: 20px; */
-}
+/* .col-infos div{
+    margin-left: 20px;
+} */
 
 .box-prix{
     border: 1px dashed #16a7b4;
@@ -134,7 +134,20 @@ input[type="number"]{
     text-transform: capitalize;
 }
 
-
+.calcul-price div{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.calcul-price input{
+    width: 50px;
+    height: 40px;
+    margin: 0px;
+    text-align: center;
+}
+.calcul-price input[type="button"]{
+    cursor: pointer;
+}
 
 
 
@@ -213,7 +226,7 @@ input[type="number"]{
 footer{
     background: #a2ecf3;
     height: 250px;
-    margin-top: 20px;
+    margin-top: -20px;
 }
 
 /* style connexion */

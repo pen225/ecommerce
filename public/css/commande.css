@@ -11,6 +11,7 @@ p{
 }
 body{
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 .container{
     margin: 20px auto;
@@ -256,12 +257,6 @@ footer{
 
 
 /* panier */
-.contact-soucis{
-    padding: 25px;
-    border: 1px dashed #16a7b4;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
 .row{
     display: flex;
     justify-content: space-around;
@@ -351,4 +346,12 @@ footer{
     display: block;
     border-radius: 3px;
     text-transform: uppercase;
+}
+
+
+/* Commande */
+.title-commande{
+    margin-left: 20%;
+    color: #555;
+    margin-bottom: 20px;
 }

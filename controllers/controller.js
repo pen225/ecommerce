@@ -10,7 +10,6 @@ const userController = class {
     static homme = (req = request, res = response) => {
         res.render('homme')
     }
-
     // Afficher la page Femme
     static femme = (req = request, res = response) => {
         res.render('femme')
@@ -23,9 +22,13 @@ const userController = class {
     static detail = (req = request, res = response) => {
         res.render('detail')
     }
-    // Afficher le panier
+    // Afficher le Panier
     static panier = (req = request, res = response) => {
         res.render('panier')
+    }
+    // Afficher la Commande
+    static commande = (req = request, res = response) => {
+        res.render('commande')
     }
 }
 

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande</title>
+    <link rel="stylesheet" href="../public/css/commande.css">
+    <script src="https://kit.fontawesome.com/a6db07c55e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Section header -->
+    
+    <div class="header-section">
+        <div class="stiky-nav">
+            <div class="container">
+                <%- include('nav') %>
+                
+                <header class="navbar">
+                    <div class="logo">
+                        <a href="/"><img src="../public/images/shopping-cart-ga97fd2286_1280.png" alt=" shopping cart"></a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="/" class="index">Accueil</a></li>
+                            <li><a href="/homme">Homme</a></li>
+                            <li><a href="/femme">Femme</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+        <div class="container">
+
+           
+            <h2 class="title-commande">Commande</h2>
+            <div class="content-panier">
+                <div class="row">
+                    <div class="content-boxPan">
+                        <div>
+                            <div class="info-user">
+                                <div>
+                                    <h3><span>Adresse de Commande</span></h3>
+                                </div>
+                                <div>
+                                    <h3>Penuel Essoh</h3>
+                                    <p><span>Angré chateau, Cocody Angré</span> <br> +225 0778684509 <br><span>penuel225@gmail.com</span></p>
+                                </div>
+                            </div>
+                            <div class="info-user">
+                                <div>
+                                    <h3><span>Mode de Livraison</span></h3>
+                                </div>
+                                <div>
+                                    <div>
+                                        <input type="radio" name="livraison-mode">
+                                    </div>
+                                    <div>
+                                        <p>à moto (Si vous résidez à Abidjan)</p>
+                                    </div>
+                                    <div>
+                                        <p>Livraiison en 24h</p>
+                                    </div>
+                                    <div>
+                                        <p>1500 CFA</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <input type="radio" name="livraison-mode">
+                                    </div>
+                                    <div>
+                                        <p>Livraison expresse (Livraison à Abidjan)</p>
+                                    </div>
+                                    <div>
+                                        <p>Livraison en 5h maximum</p>
+                                    </div>
+                                    <div>
+                                        <p>4000 CFA</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-user">
+                                <div>
+                                    <h3><span>Paiement</span></h3>
+                                </div>
+                                <div>
+                                    <div>
+                                        <input type="radio" name="livraison-mode">
+                                    </div>
+                                    <div>
+                                        <p>Paiement comptant à la livraison</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <input disabled type="radio" name="livraison-mode">
+                                    </div>
+                                    <div>
+                                        <p>Payer avec Mobile Money ou par Carte Bancaire</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-user">
+                                <div>
+                                    <div class="box-taxe">
+                                        <div>
+                                            <p><span>1 </span>Sous-total</p>
+                                            <p><span>11000 </span>CFA</p>
+                                        </div>
+                                        <div>
+                                            <p>Frais de livraison et droit de timbre </p>
+                                            <p><span>1500 </span>CFA</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-taxe">
+                                        <div>
+                                            <p><span>Total (HT) </span></p>
+                                            <p><span>12500 </span>CFA</p>
+                                        </div>
+                                    </div>
+                                    <div class="commande">
+                                        <a href="">Commander</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-commande box-pan">
+                        <div class="box-taxe">
+                            <div>
+                                <p><span>1 </span>Articles</p>
+                                <p><span>11000 </span>CFA</p>
+                            </div>
+                            <div>
+                                <p>Livraison <span> </span>CFA</p>
+                                <p><span>1500 </span>CFA</p>
+                            </div>
+                        </div>
+                        <div class="box-taxe">
+                            <div>
+                                <p><span>Total (HT) </span></p>
+                                <p><span>12500 </span>CFA</p>
+                            </div>
+                            <div>
+                                <p><span>Taxes</span></p>
+                                <p><span>0 </span>CFA</p>
+                            </div>
+                        </div>
+                        <div class="commande">
+                            <a href="">Commander</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+
+
+    <script src="../public/js/script.js"></script>
+</body>
+</html>

@@ -9,6 +9,7 @@ router.get('/femme', userController.femme);
 router.get('/connexion', userController.connexion);
 router.get('/detail', userController.detail);
 router.get('/panier', userController.panier);
+router.get('/commande', userController.commande);
 
 
 module.exports = router;
