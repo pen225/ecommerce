@@ -35,79 +35,78 @@
         <div class="container">
 
            
-            <h2 class="title-commande">Commande</h2>
+            <h2 class="title-commande">Finalisation de la commande</h2>
             <div class="content-panier">
                 <div class="row">
                     <div class="content-boxPan">
                         <div>
                             <div class="info-user">
-                                <div>
-                                    <h3><span>Adresse de Commande</span></h3>
+                                <div class="header-adresse">
+                                    <p>Adresse de Commande</p>
+                                    <a href="">Modifier</a>
                                 </div>
-                                <div>
-                                    <h3>Penuel Essoh</h3>
-                                    <p><span>Angré chateau, Cocody Angré</span> <br> +225 0778684509 <br><span>penuel225@gmail.com</span></p>
-                                </div>
-                            </div>
-                            <div class="info-user">
-                                <div>
-                                    <h3><span>Mode de Livraison</span></h3>
-                                </div>
-                                <div>
-                                    <div>
-                                        <input type="radio" name="livraison-mode">
-                                    </div>
-                                    <div>
-                                        <p>à moto (Si vous résidez à Abidjan)</p>
-                                    </div>
-                                    <div>
-                                        <p>Livraiison en 24h</p>
-                                    </div>
-                                    <div>
-                                        <p>1500 CFA</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <input type="radio" name="livraison-mode">
-                                    </div>
-                                    <div>
-                                        <p>Livraison expresse (Livraison à Abidjan)</p>
-                                    </div>
-                                    <div>
-                                        <p>Livraison en 5h maximum</p>
-                                    </div>
-                                    <div>
-                                        <p>4000 CFA</p>
-                                    </div>
+                                <div class="body-adresse">
+                                    <p><span class="user-name">Penuel Essoh</span><br> <span>Angré chateau, Cocody Angré</span> <br> +225 0778684509 <br><span>penuel225@gmail.com</span></p>
                                 </div>
                             </div>
-                            <div class="info-user">
-                                <div>
-                                    <h3><span>Paiement</span></h3>
+                            <div class="mode-livraison">
+                                <div class="header-livraison">
+                                    <p>Mode de Livraison</p>
                                 </div>
-                                <div>
-                                    <div>
-                                        <input type="radio" name="livraison-mode">
-                                    </div>
-                                    <div>
-                                        <p>Paiement comptant à la livraison</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <input disabled type="radio" name="livraison-mode">
-                                    </div>
-                                    <div>
-                                        <p>Payer avec Mobile Money ou par Carte Bancaire</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info-user">
-                                <div>
-                                    <div class="box-taxe">
+                                <div class="body-livraison">
+                                    <div class="box-moto">
+                                        <div class="box-livraison-moto">
+                                            <input type="radio" name="livraison-mode">
+                                            <img src="../public/images/255.jpeg" alt="">
+                                        </div>
                                         <div>
-                                            <p><span>1 </span>Sous-total</p>
+                                            <p class="descrip-moto">à moto (Si vous résidez à Abidjan)</p>
+                                        </div>
+                                        <div>
+                                            <p>Livraiison en 24h</p>
+                                        </div>
+                                        <div>
+                                            <p>1500 CFA</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-expresse">
+                                        <div class="box-livraison-expresse">
+                                            <input type="radio" name="livraison-mode">
+                                            <img src="../public/images/273.jpeg" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="descrip-expresse">Livraison expresse (Livraison à Abidjan)</p>
+                                        </div>
+                                        <div>
+                                            <p>Livraison en 5h maximum</p>
+                                        </div>
+                                        <div>
+                                            <p>4000 CFA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mode-paiement">
+                                <div class="header-paiement">
+                                    <p>Paiement</p>
+                                </div>
+                                <div class="body-paiement">
+                                    <div>
+                                        <input id="arrivee" type="radio" name="paiement-mode" value="arrivee" checked>
+                                        <label for="arrivee">Paiement comptant à la livraison</label>
+                                    </div>
+                                    <div>
+                                        <input disabled type="radio" name="paiement-mode">
+                                        <label style="color: #999;" for="">Payer avec Mobile Money ou par Carte Bancaire</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="confirm-commande">
+                                <div>
+                                    <div class="box-confirm-commande">
+                                        <div>
+                                            <p>Sous-total</p>
                                             <p><span>11000 </span>CFA</p>
                                         </div>
                                         <div>
@@ -115,43 +114,45 @@
                                             <p><span>1500 </span>CFA</p>
                                         </div>
                                     </div>
-                                    <div class="box-taxe">
+                                    <div class="box-confirm-commande">
                                         <div>
-                                            <p><span>Total (HT) </span></p>
-                                            <p><span>12500 </span>CFA</p>
+                                            <p class="total">Total</p>
+                                            <p class="total-para-prix"><span>12500 </span>CFA</p>
                                         </div>
                                     </div>
                                     <div class="commande">
-                                        <a href="">Commander</a>
+                                        <a href="">Confirmer la commande</a>
                                     </div>
                                 </div>
                                 
                             </div>
                         </div>
                     </div>
-                    <div class="box-commande box-pan">
-                        <div class="box-taxe">
-                            <div>
-                                <p><span>1 </span>Articles</p>
-                                <p><span>11000 </span>CFA</p>
+                    <div class="box-commande">
+                        <div class="box-pan">
+                            <div class="box-taxe">
+                                <div>
+                                    <p><span>1 </span>Articles</p>
+                                    <p><span>11000 </span>CFA</p>
+                                </div>
+                                <div>
+                                    <p>Livraison <span> </span>CFA</p>
+                                    <p><span>1500 </span>CFA</p>
+                                </div>
                             </div>
-                            <div>
-                                <p>Livraison <span> </span>CFA</p>
-                                <p><span>1500 </span>CFA</p>
+                            <div class="box-taxe">
+                                <div>
+                                    <p>Sous-total</p>
+                                    <p><span>0 </span>CFA</p>
+                                </div>
+                                <div>
+                                    <p class="total">Total</p>
+                                    <p class="total-para-prix"><span>12500 </span>CFA</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="box-taxe">
-                            <div>
-                                <p><span>Total (HT) </span></p>
-                                <p><span>12500 </span>CFA</p>
+                            <div class="commande">
+                                <a href="">Retour au panier</a>
                             </div>
-                            <div>
-                                <p><span>Taxes</span></p>
-                                <p><span>0 </span>CFA</p>
-                            </div>
-                        </div>
-                        <div class="commande">
-                            <a href="">Commander</a>
                         </div>
                     </div>
                 </div>

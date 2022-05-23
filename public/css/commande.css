@@ -264,9 +264,11 @@ footer{
     flex-wrap: wrap;
 }
 .box-pan{
-    padding: 20px;
-    border: 1px solid #999;
-    border-radius: 5px;
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 2px rgba(153, 153, 153, 0.696);
 }
 .content-boxPan{
     width: 55%;
@@ -281,7 +283,7 @@ footer{
 }
 .box-commande{
     width: 40%;
-    height: 300px;
+    /* height: 300px; */
 }
 .info-article{
     display: flex;
@@ -316,13 +318,15 @@ footer{
 .calcul-price input[type="button"]{
     cursor: pointer;
 }
-.box-commande .box-taxe{
-    padding: 25px;
-    border-bottom: 1px solid #16a7b4;
+.box-taxe{
+    padding: 5px 0px;
 }
-.box-commande div div{
+.box-taxe div{
     display: flex;
     justify-content: space-between;
+}
+.box-taxe div p{
+    padding: 5px 0px;
 }
 .commande a{
     text-decoration: none;
@@ -351,7 +355,123 @@ footer{
 
 /* Commande */
 .title-commande{
-    margin-left: 20%;
+    margin-left: 2%;
+    color: #999;
+    font-size: 20px;
+    text-transform: uppercase;
+    /* margin: 5px 0px; */
+}
+.info-user,.mode-livraison,.mode-paiement,.confirm-commande{
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 2px rgba(153, 153, 153, 0.696);
+}
+.header-adresse{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #999;
+    padding: 5px 0px;
+}
+.header-adresse p{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.header-adresse a{
+    text-decoration: none;
+    color: #16a7b4;
+    text-transform: uppercase;
+}
+.body-adresse{
+    padding: 5px 0px;
+}
+.body-adresse .user-name{
+    /* padding: 5px; */
+    font-weight: bold;
+}
+
+/* Livraison */
+.header-livraison{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #999;
+    padding: 5px 0px;
+}
+.header-livraison p{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.body-livraison{
+    padding: 5px 0px;
+}
+.box-moto,.box-expresse{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.descrip-moto,.descrip-expresse{
+    font-weight: bold;
+}
+.descrip-moto p{
+    color: #16a7b4;
+}
+.box-livraison-moto,.box-livraison-expresse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-livraison-moto img{
+    width: 70px;
+}
+.box-livraison-expresse img{
+    width: 70px;
+}
+.box-moto div p{
+    font-size: 15px;
+}
+.box-expresse div p{
+    font-size: 14px;
+}
+.box-expresse{
+    padding-top: 10px;
+}
+
+/* Paiement */
+.header-paiement{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #999;
+    padding: 5px 0px;
+}
+.header-paiement p{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.body-paiement{
+    padding: 5px 0px;
     color: #555;
-    margin-bottom: 20px;
+}
+.body-paiement div{
+    padding: 5px 0px;
+}
+.body-paiement div input{
+    margin-right: 10px;
+}
+
+.box-confirm-commande div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.total{
+    font-weight: bold;
+}
+.total-para-prix{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #16a7b4;
+    letter-spacing: 1px;
 }
