@@ -1,9 +1,23 @@
 const { request, response } = require("express");
+const mysqlConnexion = require("../db");
+const userQuery = require("../query");
 
 const userController = class {
     // Afficher la page Index
-    static accueil = (req = request, res = response) => {
-        res.render('index')
+    static accueil = async(req = request, res = response) => {
+        // res.render('index')
+        const article = await userQuery.selectArticle()
+        console.log('article', article);
+        res.render('index', {article:article})
+
+        
+        // userQuery.selectArticle()
+        // .then(sucess =>{
+        //     res.json(sucess)
+        // })
+        // .catch(error =>{
+        //     console.log('errrrrrr', error);
+        // })
     }
 
     // Afficher la page Homme
