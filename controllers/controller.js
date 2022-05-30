@@ -46,6 +46,10 @@ const userController = class {
     static commande = (req = request, res = response) => {
         res.render('commande')
     }
+    // Afficher la Pade Administrateur
+    static admin = (req = request, res = response) => {
+        res.render('admin')
+    }
 }
 
 module.exports = userController;

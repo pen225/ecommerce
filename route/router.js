@@ -10,6 +10,7 @@ router.get('/connexion', userController.connexion);
 router.get('/detail/:id', userController.detail);
 router.get('/panier', userController.panier);
 router.get('/commande', userController.commande);
+router.get('/admin', userController.admin);
 
 
 module.exports = router;
