@@ -36,17 +36,23 @@
             <div class="content-detail">
                 <div class="row">
                     <div class="col-img">
-                        <img src="../public/images/banner-image.webp" alt="">
+                        <% if(infoArticle){ %>
+                            <img src="<%= infoArticle.image_article %>" alt="">
+                        <% } %>
                     </div>
                     <div class="col-infos">
                         <div>
-                            <h2 class="article-name"> Aire-max</h2>
-                            <p><span class="marque-title">Marque : </span><span class="marque">Nike</span></p>
-                            <p><span class="ref-title">Ref : </span><span class="reference">0009</span></p>
+                            <% if(infoArticle){ %>
+                                <h2 class="article-name"> <%= infoArticle.libelle_article %> </h2>
+                                <p><span class="marque-title">Marque : </span><span class="marque"><%= infoArticle.marque_article %></span></p>
+                                <p><span class="ref-title">Ref : </span><span class="reference"><%= infoArticle.reference_article %></span></p>
+                            <% } %>
                         </div>
                         <div class="descriptions">
                             <p class="description-title">Description</p>
-                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque unde fugit, eum amet ipsam laborum aut nobis.</p>
+                            <% if(infoArticle){ %>
+                                <p class="description"><%= infoArticle.description_article %></p>
+                            <% } %>
                         </div>
                         <div class="box-prix">
                             <div>

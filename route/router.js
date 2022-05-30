@@ -7,7 +7,7 @@ router.get('/', userController.accueil);
 router.get('/homme', userController.homme);
 router.get('/femme', userController.femme);
 router.get('/connexion', userController.connexion);
-router.get('/detail', userController.detail);
+router.get('/detail/:id', userController.detail);
 router.get('/panier', userController.panier);
 router.get('/commande', userController.commande);
 

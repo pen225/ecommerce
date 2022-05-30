@@ -58,9 +58,10 @@
             <div class="row">
                 <% article.forEach(element => { %>
                     <div class="col-4">
-                        <img src="<%= element.article_image %>" alt="">
+                        <img src="<%= element.image_article %>" alt="">
+                        <a href="/detail/<%= element.id_article %>" class="view-detail">Voir les Details</a>
                         <h3><%= element.libelle_article %></h3>
-                        <p>5000 fcfa</p>
+                        <p><%= element.prix_article %> fcfa</p>
                     </div>
                 <%})%>
                 
@@ -89,7 +90,6 @@
             <div class="row">
                 <div class="col-4">
                     <img src="../public/images/Images site ecommerce/product-5.jpg" alt="">
-                    <p class="viewDetail">Detail</p>
                     <h3>T-shirt Rouge</h3>
                     <p>5000 fcfa</p>
                 </div>

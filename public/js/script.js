@@ -16,6 +16,14 @@ boxConnexion.addEventListener('mouseout', () => {
     boxConnexion.classList.remove('afficheConnexion');
 })
 
+
+
+// ----------
+
+
+
+
+
 // Add quantite panier
 
 let btnAddPanier = document.querySelector('.add-panier');
@@ -45,3 +53,5 @@ btnSoustracPanier.addEventListener('click', () =>{
         totalPanier.textContent = totalPan;
     }
 })
+
+

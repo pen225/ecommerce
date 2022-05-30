@@ -165,12 +165,19 @@ p{
     width: 150px;
     float: right;
 }
-.login i{
-    padding: 10px;
-    background: #555;
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login a{
+    text-decoration: none;
+    color: #555;
+}
+.login img{
     border-radius: 50%;
-    color: #999;
-    font-size: 1.5rem;
+    width: 50px;
+    margin-right: 5px;
 }
 .login a{
     text-decoration: none;

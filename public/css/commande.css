@@ -191,16 +191,19 @@ input[type="number"]{
     width: 150px;
     float: right;
 }
-.login i{
-    padding: 10px;
-    background: #16a7b4;
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login a{
+    text-decoration: none;
+    color: #555;
+}
+.login img{
     border-radius: 50%;
-    /* width: 50px;
-    height: 50px;
-    display: inline-block;
-    line-height: 50px; */
-    color: #fff;
-    font-size: 1.5rem;
+    width: 50px;
+    margin-right: 5px;
 }
 .login a{
     text-decoration: none;
