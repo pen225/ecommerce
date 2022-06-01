@@ -27,12 +27,12 @@
                     <span class="links_name">Product</span>
                 </a>
             </li>
-            <!-- <li>
+            <li>
                 <a href="#">
                     <i class='bx bx-list-ul' ></i>
-                    <span class="links_name">Order list</span>
+                    <span class="links_name">User list</span>
                 </a>
-            </li> -->
+            </li>
             <!-- <li>
                 <a href="#">
                     <i class='bx bx-pie-chart-alt-2' ></i>
@@ -105,46 +105,161 @@
                 <%- include('dash') %>
             </div>
             <div class="product-boxes">
-                <div class="box-creat-product">
-                    <h3>Liste des produits</h3>
-                    <p><span><i class='bx bxs-plus bx-spin-hover'></i></span> Creat new</p>
-                </div>
-                <div class="content-list-prod">
-                    <div class="header-product">
-                        <div>
-                            <select name="" id="">
-                                <option value="all">Toute Categorie</option>
-                                <option value="homme">Homme</option>
-                                <option value="femme">Femme</option>
-                            </select>
-                        </div>
-                        <div>
-                            <input type="date">
-                        </div>
-                        <div>
-                            <select name="" id="">
-                                <option value="all">Status</option>
-                                <option value="homme">En Stock</option>
-                                <option value="femme">Vendu</option>
-                            </select>
-                        </div>
-
+                <div class="content-product">
+                    <div class="box-creat-product">
+                        <h3>Liste des produits</h3>
+                        <p class="creat-article" onclick="creerArticle()">Creat new</p>
                     </div>
+                    <div class="content-list-prod">
+                        <div class="header-product">
+                            <div class="search-cat">
+                                <select name="" id="">
+                                    <option value="all">All Categorie</option>
+                                    <option value="homme">Homme</option>
+                                    <option value="femme">Femme</option>
+                                </select>
+                            </div>
+                            <div class="search-date-status">
+                                <div class="search-date">
+                                    <input type="date">
+                                </div>
+                                <div class="search-status">
+                                    <select name="" id="">
+                                        <option value="all">Status</option>
+                                        <option value="homme">En Stock</option>
+                                        <option value="femme">Vendu</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Liste des produits -->
+                        <div class="prod-list">
+                            <table class="list-table">
+                                <thead>
+                                    <tr>
+                                        <th>Référence</th>
+                                        <th>Photo produit</th>
+                                        <th>Nom Produit</th>
+                                        <th>Prix</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% infoArticle.forEach(element =>{ %>
+                                        <tr>
+                                            <td class="image-ref"><%= element.reference_article %></td>
+                                            <td class="image-produit"><img src="<%= element.image_article %>" alt=""></td>
+                                            <td class="image-name"><%= element.libelle_article %></td>
+                                            <td class="image-price"><%= element.prix_article %> Fcfa</td>
+                                            <td>
+                                                <a href="/detailArticle/<%= element.id_article %>">Detail</a>
+                                                <a href="">Edit</a>
+                                                <a href="">Delete</a>
+                                            </td>
+                                        </tr>
+                                    <% }) %>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none;" class="cotent-form">
+                    <form action="/postArticle" method="post" enctype="multipart/form-data">
+                        <fieldset>
+                            <p class="annul-ajout" onclick="annuleCreatElement()">Annuler</p>
+                            <legend>Ajouter un article</legend>
+                            <div style="clear: both;">
+                                <div class="row-article">
+                                    <div>
+                                        <label for="reference">Référence :</label>
+                                        <input type="text" id="reference" name="reference_article" placeholder="REF000">
+                                    </div>
+                                    <div>
+                                        <label for="libelle">Libellé :</label>
+                                        <input type="text" id="libelle" name="libelle_article" placeholder="Article name">
+                                    </div>
+                                </div>
+                                <div class="row-article">
+                                    <div>
+                                        <label for="marque">Marque :</label>
+                                        <input type="text" id="marque" name="marque_article" placeholder="Marque">
+                                    </div>
+                                    <div>
+                                        <label for="prix">Prix :</label>
+                                        <input type="number" id="prix" name="prix_article" value="1">
+                                    </div>
+                                </div>
+                                <div class="row-article">
+                                    <div>
+                                        <label for="quantite">Quatité :</label>
+                                        <input type="number" id="quantite" name="quantite_article" placeholder="Quantite">
+                                    </div>
+                                    <div>
+                                        <label for="description">Description :</label>
+                                        <textarea name="description_article" id="" cols="20" rows="1" placeholder="Article description"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row-article">
+                                    <div>
+                                        <label for="date_ajout">Date Ajout :</label>
+                                        <input type="date" id="date_ajout" name="date_ajout_article">
+                                    </div>
+                                    <div>
+                                        <label for="date_maj">Date mise à jout :</label>
+                                        <input type="date" id="date_maj" name="date_maj_article">
+                                    </div>
+                                </div>
+                                <div class="row-article">
+                                    <div>
+                                        <label for="categorie">Catégorie :</label>
+                                        <select name="id_categorie" id="categorie">
+                                            <option value="1">Homme</option>
+                                            <option value="2">Femme</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="image_article">Image :</label>
+                                        <input type="file" id="image_article" name="image_article">
+                                    </div>
+                                </div>
+                                <div>
+                                    <input type="submit" value="Ajouter"">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
     <script>
-let sidebar = document.querySelector(".sidebar");
-let sidebarBtn = document.querySelector(".sidebarBtn");
-sidebarBtn.onclick = function() {
-sidebar.classList.toggle("active");
-if(sidebar.classList.contains("active")){
-sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
-}else
-sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
-}
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+            if(sidebar.classList.contains("active")){
+                sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+            }else
+            sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+
+
+        let cotentForm = document.querySelector('.cotent-form');
+        let contentProduct = document.querySelector('.content-product');
+        let productBoxes = document.querySelector('.product-boxes');
+        let salesBoxes = document.querySelector('.sales-boxes');
+        // let creatArticle = document.querySelector('.creat-article');
+
+        let creerArticle = () =>{
+            contentProduct.style.display ='none';
+            cotentForm.style.display ='flex';
+        }
+        let annuleCreatElement = () =>{
+            cotentForm.style.display ='none';
+            contentProduct.style.display ='block';
+        }
     </script>
 
 </body>

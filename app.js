@@ -10,9 +10,10 @@ app.set('view engine', 'ejs');
 
 // ----
 app.use('/public', express.static('public'))
+app.use('/uploadArticle', express.static('uploadArticle'))
 
 // ---
-app.use(express.json())
+app.use(express.json());
 app.use(express.urlencoded({ extended:false }));
 
 // --- Use router

@@ -15,6 +15,17 @@ const userQuery = class{
             })
         })
     }
+    static selectAllArticle = () => {
+        return new Promise ((resolve, reject) => {
+            mysqlConnexion.query('SELECT * FROM article', (err, rs) => {
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve(rs);
+                }
+            })
+        })
+    }
 
     // Selectionner un article
     static selectOneArticle = (id) => {
@@ -39,6 +50,24 @@ const userQuery = class{
                 } else {
                     resolve(rs);
                     console.log('resultat des articles hommes', rs);
+                }
+            })
+        })
+    }
+
+    // Ajouter un article
+    static insertAticle = (data, imageArticle) => {
+        // console.log('data maison', data, imageArticle);
+        return new Promise ((resolve, reject) => {
+            let {reference_article, libelle_article, marque_article, prix_article, quantite_article, description_article, date_ajout_article, date_maj_article, image_article, id_categorie} = data;
+            let sql = "insert into article (reference_article, libelle_article, marque_article, prix_article, quantite_article, description_article, date_ajout_article, date_maj_article, image_article, id_categorie) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+            mysqlConnexion.query(sql, [reference_article, libelle_article, marque_article, prix_article, quantite_article, description_article, date_ajout_article, date_maj_article, imageArticle, id_categorie], (err, rs) => {
+                if (rs) {
+                    console.log('rs', rs);
+                    resolve(rs)
+                } else {
+                    console.log('err', err);
+                    reject(err)
                 }
             })
         })
